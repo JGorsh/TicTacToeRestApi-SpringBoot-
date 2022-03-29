@@ -7,8 +7,7 @@ import com.alex.tictactoe.repository.SaveParseXML;
 import com.alex.tictactoe.view.GameBoard;
 import com.alex.tictactoe.view.View;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 
 public class Model {

@@ -9,3 +9,5 @@
 - "/gameplay/game/{currentPlayer}/{position}" (GET) -- для начала игры  введите в адрес {currentPlayer} - имя игрока делающего ход, {position} выберите позицию
 
 - "/gameplay/init" (GET) -- для сброса игры 
+
+- "/gameplay/archive" (POST) -- в body Json с архивом игры, в ответе история игры и результат
