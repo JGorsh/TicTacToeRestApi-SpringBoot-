@@ -46,22 +46,22 @@ class RestApiControllerTest {
                 result.getResponse().getContentAsString());
     }
 
-    @Test
-    void getOnePlayer() throws Exception {
-        Player mockPlayerOne = new Player(1,"ivan","X");
-        List<Player> players = new ArrayList<>();
-        players.add(mockPlayerOne);
-
-        Mockito.when(gamePlay.getPlayers()).thenReturn(players);
-
-        RequestBuilder request = MockMvcRequestBuilders.post("/gameplay/onePlayer").contentType(MediaType.APPLICATION_JSON)
-                .content(mapToJson(players));
-        MvcResult result = mockMvc.perform(request).andReturn();
-
-        String expectedJson = this.mapToJson(players);
-        String outputInJson = result.getResponse().getContentAsString();
-        assertThat(outputInJson).isEqualTo(expectedJson);
-    }
+//    @Test
+//    void getOnePlayer() throws Exception {
+//        Player mockPlayerOne = new Player(1,"ivan","X");
+//        List<Player> players = new ArrayList<>();
+//        players.add(mockPlayerOne);
+//
+//        Mockito.when(gamePlay.getPlayers()).thenReturn(players);
+//
+//        RequestBuilder request = MockMvcRequestBuilders.post("/gameplay/onePlayer").contentType(MediaType.APPLICATION_JSON)
+//                .content(mapToJson(players));
+//        MvcResult result = mockMvc.perform(request).andReturn();
+//
+//        String expectedJson = this.mapToJson(players);
+//        String outputInJson = result.getResponse().getContentAsString();
+//        assertThat(outputInJson).isEqualTo(expectedJson);
+//    }
 
     @Test
     void getTwoPlayer() {

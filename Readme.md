@@ -1,3 +1,4 @@
+
 - "/gameplay" (GET)---"Введите в Body request (/gameplay/onePlayer), (/gameplay/twoPlayer) id, name, symbol игроков в JSON формате "  
 
 - "/gameplay/onePlayer" (POST)-- первый игрок(возвращает список игроков)
